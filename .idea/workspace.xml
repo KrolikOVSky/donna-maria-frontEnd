@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c9029df7-0a44-4878-9b44-9a0b7194e3eb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/donna-maria.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo_Donna.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/social/instagram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/social/phone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/social/pngegg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Group.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Product.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SiteMap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TestAxios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/blocks/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/blocks/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/blocks/LiveHeader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/editItems/AddGroup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/editItems/AddProduct.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/editItems/EditGroup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/editItems/EditProduct.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/functions/Translit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sets/Groups.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sets/Products.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/testSets/Global.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/Raleway.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/Raleway.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/Raleway.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/Raleway.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/ProductStyle.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1nTbvxzqYNjndEM3sdPQ8NKfMkG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Blocks" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
+    <property name="ts.external.directory.path" value="C:\Users\User\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\203.5981.135\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\donna-maria\src\components\Blocks" />
+      <recent name="C:\Users\User\WebstormProjects\donna-maria\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\donna-maria\src\components\editItems" />
+      <recent name="C:\Users\User\WebstormProjects\donna-maria\src" />
+      <recent name="C:\Users\User\WebstormProjects\donna-maria\src\Styles" />
+      <recent name="C:\Users\User\WebstormProjects\donna-maria\src\components\Blocks" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c9029df7-0a44-4878-9b44-9a0b7194e3eb" name="Default Changelist" comment="" />
+      <created>1611417261866</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611417261866</updated>
+      <workItem from="1611417263560" duration="4972000" />
+      <workItem from="1611611759868" duration="12022000" />
+      <workItem from="1613738227663" duration="9201000" />
+      <workItem from="1613990586751" duration="31479000" />
+      <workItem from="1614066142247" duration="23081000" />
+      <workItem from="1614159121012" duration="3035000" />
+      <workItem from="1614163906469" duration="7088000" />
+      <workItem from="1614280276976" duration="474000" />
+      <workItem from="1614324669364" duration="5178000" />
+      <workItem from="1614447443647" duration="9929000" />
+      <workItem from="1614506849550" duration="9244000" />
+      <workItem from="1614596574857" duration="1531000" />
+      <workItem from="1614678221956" duration="12032000" />
+      <workItem from="1614762496908" duration="22574000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+</project>
