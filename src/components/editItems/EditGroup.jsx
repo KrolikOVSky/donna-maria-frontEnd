@@ -1,8 +1,14 @@
 import React from "react";
-import {Global} from "../testSets/Global"
-import {Redirect} from "react-router";
+import {Global} from "../Global";
+import {getFromServer} from "../functions/ServerConnect";
 
-export class AddGroup extends React.Component {
+export class EditGroup extends React.Component {
+
+	constructor(props) {
+		super(props);
+		this.requireId = this.props.match.params.id
+	}
+
 	state = {
 		name: '',
 		file: '',
@@ -22,8 +28,8 @@ export class AddGroup extends React.Component {
 		let formData = new FormData()
 		formData.append('name', this.state.name)
 		formData.append('file', this.state.file)
-		fetch(`${Global.url}/add/gro`, {
-			method: 'POST',
+		fetch(`${Global.url}/upd/gro/${this.requireId}`, {
+			method: 'PUT',
 			body: formData
 		}).then(res => {
 			console.log(res);
@@ -32,26 +38,35 @@ export class AddGroup extends React.Component {
 		})
 	}
 
+	componentDidMount() {
+		getFromServer(Global.getGroup).then(res => {
+			res.map(item => {
+				if(String(item.id) === String(this.requireId)){
+					this.setState({
+						name: item.name,
+					})
+				}
+			})
+		})
+	}
 
 	render() {
-		const {redirect} = this.state;
-		if (redirect) {
-			return <Redirect to="/groups"/>;
-		}
 		return (
 			<div className="text-center">
-				<h1 className="display-3">Добавление группы</h1>
+				<h1 className="display-3">Редактирование группы</h1>
 				<form className="gap-3 row" onSubmit={this.handleSubmit}>
 
 					<div className="form-floating">
 						<input type="text" id="name" name="name" onChange={this.handleText}
-						       placeholder="Введите название блюда" className="form-control input" required/>
+						       placeholder="Введите название блюда" className="form-control input"
+						       value={this.state.name} required/>
 						<label htmlFor="name">Название группы</label>
 					</div>
 
 					<div className="form-group">
 						<input type="file" id="file" name="file" onChange={this.handleFile}
-						       placeholder="Загрузите фото блюда" className="form-control input" required/>
+						       placeholder="Загрузите фото блюда" className="form-control input"
+						       />
 					</div>
 
 					<button type="submit" className="btn btn-success input">Submit</button>

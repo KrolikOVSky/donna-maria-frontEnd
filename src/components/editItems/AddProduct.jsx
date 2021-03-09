@@ -1,7 +1,8 @@
 import React from 'react'
 import "../../styles/ProductStyle.css"
-import {Global} from "../testSets/Global";
+import {Global} from "../Global";
 import {Redirect} from "react-router";
+import {getFromServer, sendToServer} from "../functions/ServerConnect";
 
 export class AddProduct extends React.Component {
 
@@ -13,8 +14,17 @@ export class AddProduct extends React.Component {
 		volume: '',
 		groupName: '',
 		file: '',
-		redirect: ''
+		redirect: '',
+		groups: []
 	}
+
+
+	componentDidMount() {
+		getFromServer(Global.getGroup).then(res => {
+			this.setState({ groups: res });
+		})
+	}
+
 
 	handleText = event => {
 		let target = event.target
@@ -33,20 +43,8 @@ export class AddProduct extends React.Component {
 
 	handleSubmit = event => {
 		event.preventDefault();
-		let formData = new FormData()
-		formData.append('name', this.state.name)
-		formData.append('price', this.state.price)
-		formData.append('description', this.state.description)
-		formData.append('shortDesc', this.state.shortDesc)
-		formData.append('volume', this.state.volume)
-		formData.append('groupName', this.state.groupName)
-		formData.append('file', this.state.file)
-		fetch(`${Global.url}/add/prod`, {
-			method: 'POST',
-			body: formData
-		}).then(res => {
+		sendToServer(this.state, "POST", Global.addProduct).then(res => {
 			console.log(res);
-
 			if (res.status === 200) this.setState({redirect: true})
 			else alert(`Возможно блюдо с данным названием уже существует`)
 		})
@@ -55,7 +53,7 @@ export class AddProduct extends React.Component {
 	render() {
 		const {redirect} = this.state;
 		if (redirect) {
-			return <Redirect to="/products"/>;
+			return <Redirect to="/"/>;
 		}
 		return (
 			<div className="text-center">
@@ -93,15 +91,16 @@ export class AddProduct extends React.Component {
 					</div>
 
 					<div className="form-floating">
-						<select id="groupSelect" name="groupSelect" onChange={this.handleText}
+						<select id="groupName" name="groupName" onChange={this.handleText}
 						        className="form-select input" required>
+							<option value=""/>
 							{
-								Global.groups().map(group => (
-									<option>{group.name}</option>
+								this.state.groups.map(group => (
+									<option key={group.id}>{group.name}</option>
 								))
 							}
 						</select>
-						<label htmlFor="groupSelect">Группа</label>
+						<label htmlFor="groupName">Группа</label>
 					</div>
 
 					<div className="form-group">
@@ -110,12 +109,10 @@ export class AddProduct extends React.Component {
 					</div>
 
 					<div className="form-floating">
-						<input type="submit" className="btn btn-success input" />
+						<input type="submit" className="btn btn-success input"/>
 					</div>
 
 				</form>
-
-
 			</div>
 		)
 	}

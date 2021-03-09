@@ -15,9 +15,7 @@
     background-color: rgba(0, 0, 0, 0);
 }
 
-.border-trans {
-    border-color: rgba(0, 0, 0, 0);
-}
+
 
 .bg-donna {
     background-color: rgb(87, 60, 124);
@@ -144,8 +142,11 @@ label{
     /*min-height: 300px;*/
     /*height: 300px !important;*/
     width: 300px !important;
+
     border-radius: 10px;
-    border-color: transparent;
+    /*border-color: red;*/
+    /*border-width: 2px;*/
+
     font-family: Raleway;
     color: #000;
     text-decoration: none;
@@ -159,3 +160,19 @@ label{
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
 }
 
+.crop-div{
+    width: 65% !important;
+    /*max-height: 256px;*/
+}
+
+canvas{
+    /*height: 25%;*/
+    width: 300px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.ReactCrop{
+    width: 400px!important;
+    height: 400px!important;
+}

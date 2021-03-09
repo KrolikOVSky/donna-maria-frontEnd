@@ -16,12 +16,12 @@ export class Footer extends React.Component {
 
                     <div className="col text-center">
                         <a className="" href="tel:+79789393001">
-                            <img className="rounded rounded-circle img-social" src="social/phone.png"
+                            <img className="rounded rounded-circle img-social" src="/social/phone.png"
                                  alt="+79789393001"/>
                         </a>
 
                         <a className="" href="#instagram">
-                            <img className="rounded rounded-circle img-social" src="social/pngegg.png" alt="Instagram"/>
+                            <img className="rounded rounded-circle img-social" src="/social/pngegg.png" alt="Instagram"/>
                         </a>
                     </div>
 

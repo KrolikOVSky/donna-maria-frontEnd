@@ -1,59 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9029df7-0a44-4878-9b44-9a0b7194e3eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/donna-maria.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo_Donna.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/social/instagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/social/phone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/social/pngegg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Group.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Product.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SiteMap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TestAxios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/blocks/Footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/blocks/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/blocks/LiveHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/editItems/AddGroup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/editItems/AddProduct.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/editItems/EditGroup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/editItems/EditProduct.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/functions/Translit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sets/Groups.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sets/Products.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/testSets/Global.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/Raleway.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/Raleway.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/Raleway.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/Raleway.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reportWebVitals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/ProductStyle.css" afterDir="false" />
+    <list default="true" id="c9029df7-0a44-4878-9b44-9a0b7194e3eb" name="Default Changelist" comment="...">
+      <change afterPath="$PROJECT_DIR$/src/components/Global.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Group.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NotFound.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/blocks/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/editItems/EditGroup.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/editItems/EditProduct.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/functions/ServerConnect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/functions/Util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sets/Groups.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sets/Products.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/testSets/Test.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Group.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SiteMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SiteMap.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TestAxios.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/testSets/TestAxios.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/blocks/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blocks/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/blocks/Header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/blocks/LiveHeader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/editItems/AddGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/editItems/AddGroup.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/editItems/AddProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/editItems/AddProduct.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/editItems/EditGroup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/editItems/EditProduct.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/functions/Translit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/functions/Translit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sets/Groups.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sets/Products.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/testSets/Global.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/ProductStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/ProductStyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +57,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="TypeScript JSX File" />
+        <option value="tsconfig.json" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -72,7 +67,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1nTbvxzqYNjndEM3sdPQ8NKfMkG" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -104,10 +101,11 @@
       <recent name="C:\Users\User\WebstormProjects\donna-maria\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\donna-maria\src\components\testSets" />
+      <recent name="C:\Users\User\WebstormProjects\donna-maria\src\components" />
       <recent name="C:\Users\User\WebstormProjects\donna-maria\src\components\editItems" />
       <recent name="C:\Users\User\WebstormProjects\donna-maria\src" />
       <recent name="C:\Users\User\WebstormProjects\donna-maria\src\Styles" />
-      <recent name="C:\Users\User\WebstormProjects\donna-maria\src\components\Blocks" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -146,8 +144,25 @@
       <workItem from="1614506849550" duration="9244000" />
       <workItem from="1614596574857" duration="1531000" />
       <workItem from="1614678221956" duration="12032000" />
-      <workItem from="1614762496908" duration="22574000" />
+      <workItem from="1614762496908" duration="23066000" />
+      <workItem from="1614873485141" duration="8000000" />
+      <workItem from="1614931722914" duration="10920000" />
+      <workItem from="1615026883485" duration="17052000" />
+      <workItem from="1615105345206" duration="17186000" />
+      <workItem from="1615136122217" duration="16677000" />
+      <workItem from="1615197629994" duration="13823000" />
+      <workItem from="1615212966888" duration="11512000" />
+      <workItem from="1615265966053" duration="113000" />
+      <workItem from="1615274682756" duration="187000" />
     </task>
+    <task id="LOCAL-00001" summary="...">
+      <created>1614814114637</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614814114643</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,5 +184,7 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="..." />
+    <option name="LAST_COMMIT_MESSAGE" value="..." />
   </component>
 </project>
