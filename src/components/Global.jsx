@@ -24,23 +24,29 @@ export class Global {
 	static groups() {
 		return (
 			[
-				{name: "Паста", img: "images/1.png"},
-				{name: "Пицца", img: "images/2.png"},
-				{name: "Равиолли", img: "images/3.png"},
-				{name: "Лазанья", img: "images/4.png"},
-				{name: "Мороженное", img: "images/5.png"},
-				{name: "Панини/поркетта", img: "images/6.png"},
+				{name: "Паста", img: "/social/instagram.png"},
+				{name: "Пицца", img: "/images/2.png"},
+				{name: "Равиолли", img: "/images/3.png"},
+				{name: "Лазанья", img: "/images/4.png"},
+				{name: "Мороженное", img: "/images/5.png"},
+				{name: "Панини/поркетта", img: "/images/6.png"},
 			]
 		)
 	}
 
-	static url = "http://localhost:8081";
-	// static url = "http://192.168.1.147:8081";
-	// static url = "http://donna-maria.sytes.net:8081";
+	static url = "http://localhost:8081/api";
+	// static url = "http://donna-maria.sytes.net:8081/api";
+	// static url = "http://192.168.1.147:8081/api";
 
-	static addProduct   = `${Global.url}/add/prod`
-	static addGroup     = `${Global.url}/add/gro`
-	static getProduct   = `${Global.url}/pro`
-	static getGroup     = `${Global.url}/gro`
+	static addProduct   = `${Global.url}/product/create`
+	static editProduct  = `${Global.url}/product/upd`
+	static delProduct   = `${Global.url}/product/del`
+	static getProducts  = `${Global.url}/product`
+
+	static addGroup     = `${Global.url}/group/create`
+	static editGroup    = `${Global.url}/group/upd`
+	static delGroup     = `${Global.url}/group/del`
+	static getGroups    = `${Global.url}/group`
+
 	static getImg       = `${Global.url}/img`
 }

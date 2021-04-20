@@ -6,18 +6,22 @@ import {Products} from "./components/sets/Products";
 import {Groups} from "./components/sets/Groups";
 import {AddProduct} from "./components/editItems/AddProduct";
 import {AddGroup} from "./components/editItems/AddGroup";
-import {TestAxios} from "./components/testSets/TestAxios";
 import {EditGroup} from "./components/editItems/EditGroup";
 import {EditProduct} from "./components/editItems/EditProduct";
 import {NotFound} from "./components/NotFound";
 import {Test} from "./components/testSets/Test";
+import {GroupsList} from "./components/adminComponents/Groups/GroupsList";
+import {ProductsList} from "./components/adminComponents/Products/ProductsList";
+import {AdminPage} from "./components/adminComponents/AdminPage";
+import {ProductInfo} from "./components/ProductInfo";
 
 export default class App extends React.Component {
 	render() {
 		return (
 			<div>
-				<Header/>
 				<Router>
+					<Header/>
+
 					<Switch>
 						<Route exact path="/"/>
 						<Route exact path="/groups" component={Groups}/>
@@ -26,13 +30,20 @@ export default class App extends React.Component {
 						<Route exact path="/add/group" component={AddGroup}/>
 						<Route path="/edit/product/:id" component={EditProduct}/>
 						<Route path="/edit/group/:id" component={EditGroup}/>
-						<Route exact path="/test" component={TestAxios}/>
+
+						<Route exact path="/test" component={Test}/>
+
+						<Route exact path="/admin/groups" component={GroupsList}/>
+						<Route exact path="/admin/products" component={ProductsList}/>
+						<Route exact path="/admin/" component={AdminPage}/>
+
+						<Route exact path="/prod" component={ProductInfo}/>
+
 						<Route component={NotFound}/>
 					</Switch>
-					{/*<Groups />*/}
-					{/*<EditGroup />*/}
+
+					<Footer/>
 				</Router>
-				<Footer/>
 			</div>
 		);
 	}

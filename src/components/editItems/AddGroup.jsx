@@ -18,24 +18,31 @@ export class AddGroup extends React.Component {
 		super(props);
 		this.imageCanvasCropRef = React.createRef()
 		this.inputRef = React.createRef()
-	} // todo
+	}
 
 	state = {
 		name: '',
 		file: null,
+
 		imgSrc: null,
 		imgSrcExt: null,
 		redirect: '',
 		crop: {
 			aspect: 1
 		},
-		disabled: true,
-		src: null
+
+		disabledText: true,
+		disabledImg: true,
+		disabledCropSub: true,
+		firstLoad: true,
 	}
 
 	handleText = event => {
-		this.setState({name: event.target.value})
-	} // success
+		this.setState({
+			name: event.target.value,
+			disabledText: false
+		})
+	}
 
 	handleFile = event => {
 		const files = event.target.files
@@ -63,28 +70,30 @@ export class AddGroup extends React.Component {
 			name: this.state.name,
 			file: this.state.file,
 		}
-
-		sendToServer(group, "POST", `${Global.url}/add/gro`).then(res => {
+		sendToServer(group, "POST", Global.addGroup).then(res => {
 			if (res.status === 200) this.setState({redirect: true})
-			else alert("Возможно группа с данным названием уже существует")
+			else alert("Возможно группа с данным названием уже существует", res.status)
 		})
-	} // success
-
-
-	handleImageLoaded = image => {
-
 	}
+
 	handleOnCropChange = crop => {
 		this.setState({crop: crop})
 	}
 	handleOnCropComplete = (pixelCrop, crop) => {
-		const canvasRef = this.imageCanvasCropRef.current
-		const {imgSrc} = this.state
-		console.log(canvasRef, imgSrc)
-		image64toCanvasRef(canvasRef, imgSrc, crop)
+		if (!this.state.firstLoad) {
+			const canvasRef = this.imageCanvasCropRef.current
+			const {imgSrc} = this.state
+			image64toCanvasRef(canvasRef, imgSrc, crop)
+			this.setState({
+				disabledCropSub: false,
+			})
+		}
+		this.setState({
+			firstLoad: false
+		})
 	}
 
-	handleOnComplete = e => {
+	handleOnComplete = (e) => {
 		e.preventDefault()
 		const canvasRef = this.imageCanvasCropRef.current
 		const {imgSrc} = this.state
@@ -92,17 +101,20 @@ export class AddGroup extends React.Component {
 		const fileName = 'newImage.' + fileExt
 		const imageData64 = canvasRef.toDataURL('image/' + fileExt)
 		const newCroppedFile = base64StringToFile(imageData64, fileName)
+
 		this.setState({
 			file: newCroppedFile,
-			disabled: false
+			disabledImg: false,
+			imgSrc: null,
+			imgSrcExt: null,
+			crop: {
+				aspect: 1
+			}
 		})
 	}
 
 	render() {
-		const {file, imgSrc, src} = this.state
-		// const img = URL.createObjectURL(src)
-
-		const {redirect} = this.state;
+		const {redirect, imgSrc, disabledImg, disabledText, disabledCropSub} = this.state
 		if (redirect) {
 			return <Redirect to="/groups"/>;
 		}
@@ -126,36 +138,36 @@ export class AddGroup extends React.Component {
 					<div className="">
 						{
 							imgSrc !== null ?
-								<div className="container">
-									<div className="row crop-div mx-auto">
-										<div className="col-sm ReactCrop">
-											<ReactCrop
-												className=""
-												src={imgSrc}
-												crop={this.state.crop}
-												onComplete={this.handleOnCropComplete}
-												onImageLoaded={this.handleImageLoaded}
-												onChange={this.handleOnCropChange}/>
-										</div>
-
-
-										<div className="col-sm">
-											<h1>Предпрсмотр</h1>
-											<canvas ref={this.imageCanvasCropRef}/>
-										</div>
+								<div className="container-fluid">
+									<div className=" ReactCrop">
+										<ReactCrop
+											className=""
+											src={imgSrc}
+											crop={this.state.crop}
+											onComplete={this.handleOnCropComplete}
+											onChange={this.handleOnCropChange}/>
 									</div>
+									<canvas id="preview" ref={this.imageCanvasCropRef}/>
+									{
+										!disabledCropSub ?
 
-
-									<input
-										type="submit"
-										className="btn btn-info btn-block"
-										onClick={this.handleOnComplete}
-									/>
+											<div className="gap-2">
+												<input
+													id="previewCommit"
+													type="submit"
+													className="btn btn-info"
+													onClick={this.handleOnComplete}
+													value="Закончить редактирование изображения"
+												/>
+											</div>
+											: ''
+									}
 								</div>
 								: ''
 						}
 					</div>
-					<button type="submit" className="btn btn-success input" disabled={this.state.disabled}>Submit
+					<button type="submit" className="btn btn-success input"
+					        disabled={disabledImg || disabledText}>Submit
 					</button>
 				</form>
 			</div>

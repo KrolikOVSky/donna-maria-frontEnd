@@ -1,19 +1,19 @@
 import React from 'react'
-import {Group} from "../Group";
-import axios from "axios";
+import {Group} from "./Group";
 import {Global} from "../Global";
+import {getFromServer} from "../functions/ServerConnect";
 
+// noinspection JSUnresolvedVariable
 export class Groups extends React.Component {
 	state = {
 		groups: []
 	}
 
 	componentDidMount() {
-		axios.get(`${Global.url}/gro`)
-			.then(res => {
-				const groups = res.data;
-				this.setState({groups});
-			})
+		getFromServer(Global.getGroups).then(res => {
+			const groups = res;
+			this.setState({groups});
+		})
 	}
 
 	render() {
@@ -23,7 +23,7 @@ export class Groups extends React.Component {
 				<div className="container-fluid row gap-3">
 					{
 						this.state.groups.map(group => (
-							<Group key={group.id} name={group.name} img={`${Global.url}/img/${group.imageFileName}`}/>
+							<Group key={group.id} id={group.id} name={group.name} urlName={group.transLitName} img={`${Global.getImg}/${group.imageFileName}`}/>
 						))
 					}
 				</div>

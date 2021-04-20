@@ -1,3 +1,5 @@
+import React from "react";
+
 export const imageMaxSize = 1000000000 // bytes
 export const acceptedFileTypes = 'image/png, image/jpg, image/jpeg, image/gif'
 export const acceptedFileTypesArray = acceptedFileTypes.split(",").map((item) => {
@@ -22,37 +24,37 @@ export function verifyFile(files) {
 	}
 }
 
-export function  base64StringToFile(base64String, filename) {
+export function base64StringToFile(base64String, filename) {
 	let arr = base64String.split(','),
 		mime = arr[0].match(/:(.*?);/)[1],
 		bStr = atob(arr[1]),
 		n = bStr.length,
 		u8arr = new Uint8Array(n);
-	while(n--){
+	while (n--) {
 		u8arr[n] = bStr.charCodeAt(n);
 	}
-	return new File([u8arr], filename, {type:mime});
+	return new File([u8arr], filename, {type: mime});
 }
 
-export function  extractImageFileExtensionFromBase64(base64Data) {
+export function extractImageFileExtensionFromBase64(base64Data) {
 	return base64Data.substring("data:image/".length, base64Data.indexOf(";base64"))
 }
 
 export function image64toCanvasRef(canvasRef, imageSrc, crop) {
 	const image = new Image()
 	image.src = imageSrc
-	
+
 	const width = percentToPixel(image.width, crop.width)
 	const height = percentToPixel(image.height, crop.height)
 	const x = percentToPixel(image.width, crop.x)
 	const y = percentToPixel(image.height, crop.y)
-	
+
 	const canvas = canvasRef
 	canvas.width = width;
 	canvas.height = height;
 	const ctx = canvas.getContext('2d');
 
-	image.onload = function() {
+	image.onload = function () {
 		ctx.drawImage(
 			image,
 			x,
@@ -67,7 +69,7 @@ export function image64toCanvasRef(canvasRef, imageSrc, crop) {
 	}
 }
 
-function percentToPixel(original, percent){
+function percentToPixel(original, percent) {
 	return (original * percent) / 100;
 }
 
